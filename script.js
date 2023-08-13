@@ -10,7 +10,7 @@ document.body.append(div);
 
 async function foo(){
       let cname = document.getElementById("txt").value;
-      let res = await fetch(`https://api.covid19api.com/dayone/country/${cname}`);
+      let res = await fetch(`https://covid-19-tracking.p.rapidapi.com/v1/${cname}`);
       let res1 = await res.json();
       console.log(res1);
 
